@@ -4,10 +4,23 @@
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">nosotros</ion-title>
     </ion-toolbar>
   </ion-header>
+<h2>Cálculo de distancia</h2>
+<h3>Ubicación de oficinas</h3>
+<p>longitud: 50</p>
+<p>latitud: -5</p>
+<ion-button (click)="verUbicacion()">Obtener ubicación</ion-button>
+<p>Latitud: {{ actualLat }}</p>
+<p>Longitud: {{ actualLon }}</p>
+
+<ion-button (click)="CalcularDistancia()">Distancia a la oficina</ion-button>
+<p>Distancia: {{ distancia }} km</p>
+
 </ion-content>
