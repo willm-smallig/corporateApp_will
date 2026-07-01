@@ -17,6 +17,11 @@ import { Product } from 'src/app/models/producto.model';
 export class ProductosPage implements OnInit {
 
   productos:Product[] = [];
+  disponibles: Product[] = [];
+assets: any;
+images: any;
+lg: any;
+dell: any;
 
   constructor(private service: Products) { }
 
@@ -24,5 +29,6 @@ export class ProductosPage implements OnInit {
     this.productos = await this.service.getProducts();
 
   }
+
 
 }
